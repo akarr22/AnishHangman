@@ -10,7 +10,7 @@ for i in range (0, int(wordLen)):
     
 def getLetter():
     global letter
-    letter = raw_input ("Enter a letter guess   hi ")
+    letter = raw_input ("Enter a letter guess    ")
 
 def check():
     global updatedSpaces
