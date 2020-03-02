@@ -37,8 +37,32 @@ def check():
             else:
                 print("Game Over   ")
                 
+def intialize ():
+    wordBank = ['keyboard', 'computer', 'mouse', 'application']
+    word = random.choice(wordBank)
+    updatedspaces = []
+    spaces = "___"
+    print(spaces), len(word)
+    
+def getLetter():
+    letter = raw_input('Guess a letter ')
+    global letter
+    letterList = []
+    global letterList  
+    letterList.append(letter)
+    
+def checkifWon ():
+    if len(letterList) == len(word): 
+        print('Good job, you won!')
+        
+    else:
+        getLetter()
+                
 def game():
     getLetter()
+    checkifWon()
     check()
+    intialize()
+    getLetter()
     
 game()                      
